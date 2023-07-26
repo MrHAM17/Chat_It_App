@@ -348,7 +348,7 @@ The screenshots of the application are included below:
 ![](https://github.com/MrHAM17/Chat_It_App/blob/master/2.%20Rough%20Work%20&%20Data/Used%20Images/Fig%205.2.png?raw=true)
 
 
-![](https://github.com/MrHAM17/Chat_It_App/blob/master/2.%20Rough%20Work%20&%20Data/Used%20Images/Fig%205.3.jpg?raw=true)
+![](https://github.com/MrHAM17/Chat_It_App/blob/master/2.%20Rough%20Work%20&%20Data/Used%20Images/Fig%205.3.png?raw=true)
 
 -   #### 5.1. Profile Verification :
    
