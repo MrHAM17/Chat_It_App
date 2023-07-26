@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "661930116109",
+    "project_id": "amigo-99b42",
+    "storage_bucket": "amigo-99b42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661930116109:android:8c4093bcb3751221e84144",
+        "android_client_info": {
+          "package_name": "com.example.amigo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661930116109-j0v9so964ae8p3ca4sj6thpchk4vjcb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ-at3torrVkUrBqcFk817aSIIezWhxC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661930116109-j0v9so964ae8p3ca4sj6thpchk4vjcb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
