@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amigo</string>
+    // The app name which shows in app while running it change to Amigo from whatsapp.
+</resources>

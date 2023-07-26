@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+//        maven { url "https://jitpack.io" }  // OTP Activity: step 1 ( Second one used in build.gradle...)
+
+rootProject.name = "Amigo"
+include ':app'
+
+

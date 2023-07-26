@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+
+    ////////
+    id 'com.google.gms.google-services' // Firebase Very first processs: Step 2(Step 1:Project Gradle)
+
+}
+
+android {
+    compileSdk 33
+
+    //Video part: Authentication: Step 2(Step 1:Module Gradle)
+    buildFeatures{
+        viewBinding true
+    }
+
+
+    defaultConfig {
+        applicationId "com.example.amigo"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.amigo'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'/// 1) Not worked
+
+   // implementation 'com.github.GoodieBag:Pinview:v1.3'                      // 2) Worked // OTP activity: Step 2 (First one used in setting.gradle...)
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')  // 3) Firebase Very first processs: Step 3: (Step 2:Module Gradle)
+    implementation 'com.google.firebase:firebase-analytics'             // 4) Firebase Very first processs: Step 4: (Step 3:Module Gradle)
+
+    implementation 'com.google.firebase:firebase-auth'         // 5) Video part: Authentication: Step 1(Step 2:Module Gradle)
+
+    implementation 'com.google.firebase:firebase-database' // 6)  For firebase database to save chats & user data
+    implementation 'com.google.firebase:firebase-storage'  // 7)  For firebase stirage to save images
+
+    implementation 'com.google.firebase:firebase-messaging'   // 14) For sending notification to user.
+
+    implementation 'com.google.firebase:firebase-config'   // 16)  Remote cinfig: To control the app from backend like google home page.
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'       // 8)  Use to give circular shape to user profile while creating it
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'          // 9)  Glide library's dependancies: For image processing i.e, string to int.
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    implementation "com.github.pgreze:android-reactions:1.6"  // 10)  Reactions/Feelings View on messages.
+
+    implementation 'com.github.3llomi:CircularStatusView:V1.0.3'  // 11)  For circular status/stories on top.
+
+    implementation 'com.github.OMARIHAMZA:StoryView:1.0.2-alpha'  // 12) To view the stories after playing them.
+
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'  // 13) To show loading process when the app is opened.
+
+    implementation 'com.android.volley:volley:1.2.1'   // 15)  For to send notification.
+}
