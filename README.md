@@ -1,6 +1,7 @@
+# Chat It App
+
 This is "master" branch(main) of this repo; And presenting latest version (i.e, version no. 2) of the app. Old version is in "previous_version" branch of this repo.
 
-# Chat It App
 It is the Mmessaging Android Application demonstrating how to use Create, Upload, Read & Delete operations & how to deal with Firebase Realtime Database.
 
 
